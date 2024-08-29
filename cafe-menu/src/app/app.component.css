@@ -1,0 +1,77 @@
+body {
+    color: #f8f8ff; /* Off-white */
+    background-color: #333; /* Charcoal background */
+  }
+  .baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dropbtn {
+    background-color: #444;
+    color: #f8f8ff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .meal-details, .drink-details {
+    margin-top: 10px;
+  }
+  
+  .meal-details img, .drink-details img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .not-available {
+    text-align: center;
+    color: #f8f8ff;
+    margin-top: 20px;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dropdown-content.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown .dropbtn {
+    background-color: #444;
+    color: #f8f8ff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

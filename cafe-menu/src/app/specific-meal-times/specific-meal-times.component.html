@@ -1,0 +1,18 @@
+<div class="dropdown">
+    <button class="dropbtn">Specific Meal Times</button>
+    <div class="dropdown-content">
+      <div *ngFor="let meal of displayedMeals">
+        <button (click)="toggleMeal(meal)">{{ meal.name }}</button>
+        <div *ngIf="meal.showDetails" class="meal-details">
+          <img [src]="meal.image" alt="{{ meal.name }}" />
+          <p>{{ meal.description }}</p>
+          <p>Price: {{ meal.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="!displayedMeals.length" class="not-available">
+    Not available right now
+  </div>
+  

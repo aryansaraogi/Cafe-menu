@@ -1,0 +1,14 @@
+<div class="dropdown">
+    <button class="dropbtn" (click)="toggleDropdown()">All Day Drinks</button>
+    <div class="dropdown-content" *ngIf="dropdownOpen">
+      <div *ngFor="let drink of drinks">
+        <button (click)="toggleDrink(drink)">{{ drink.name }}</button>
+        <div *ngIf="drink.showDetails" class="drink-details">
+          <img [src]="drink.image" alt="{{ drink.name }}" />
+          <p>{{ drink.description }}</p>
+          <p>Price: {{ drink.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
